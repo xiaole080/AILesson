@@ -233,8 +233,16 @@
     <div class="head"><span class="lv beg">初級</span><h3>生成AIのリスクと限界</h3><span class="go">ひらく →</span></div>
     <p class="desc">もっともらしい誤り・情報漏洩・著作権。何に気をつければ安心して使えるか。</p>
   </a>
-  <a class="golink plan" href="#soshiki">
-    <div class="head"><span class="lv beg">初級</span><span class="lv plan">未実施</span><h3>組織の中のAI</h3><span class="go">ひらく →</span></div>
+  <a class="golink" href="#hallu">
+    <div class="head"><span class="lv beg">初級</span><h3>ハルシネーション対策</h3><span class="go">ひらく →</span></div>
+    <p class="desc">AIの“それっぽい嘘”を、防ぐ・見抜く・線を引く。入力で防ぐ→ツールで防ぐ→出力を検証→頼らない領域を決める、4つの方向。</p>
+  </a>
+  <a class="golink" href="#engineer">
+    <div class="head"><span class="lv beg">初級</span><h3>AI時代のエンジニア像</h3><span class="go">ひらく →</span></div>
+    <p class="desc">コードの書き方ではなく、IT業界の“地図”の話。受託型と自社開発型の分業、AIが変えている工程、3年後の予想図。</p>
+  </a>
+  <a class="golink" href="#soshiki">
+    <div class="head"><span class="lv beg">初級</span><h3>組織の中のAI</h3><span class="go">ひらく →</span></div>
     <p class="desc">会社・チームでAIを使うときのルールと運用。個人利用との違いはどこか。</p>
   </a>
 
@@ -254,13 +262,13 @@
 
   <div class="sec-eyebrow peri">応用トラック ・ 手を動かす ― ほぼノーコード・誰でも参加OK</div>
   <p class="sec-note">座学を受けていなくても参加できます。気になるものからどうぞ。</p>
+  <a class="golink peri plan" href="#gas">
+    <div class="head"><span class="lv app">応用</span><span class="lv plan">準備中</span><h3>GASを知りましょう</h3><span class="go">くわしく →</span></div>
+    <p class="desc">応用トラックの入口。“きっかけ・つなぐ・外に出る”の3部品で、仕事が勝手に動く仕組みを見る回。</p>
+  </a>
   <a class="golink peri" href="#kabeuchi">
     <div class="head"><span class="lv app">応用</span><h3>プロンプト壁打ち法</h3><span class="go">ひらく →</span></div>
     <p class="desc">AIとの「壁打ち」でプロンプトを育てる実践。基本の型 → 構造で絞る。</p>
-  </a>
-  <a class="golink peri plan" href="#hallu">
-    <div class="head"><span class="lv app">応用</span><span class="lv plan">未実施</span><h3>ハルシネーション予防策</h3><span class="go">ひらく →</span></div>
-    <p class="desc">「AIの答えを疑って、確かめて、直す」ための具体的な予防のしかた。</p>
   </a>
   <a class="golink peri plan" href="#gazou">
     <div class="head"><span class="lv app">応用</span><span class="lv plan">未実施</span><h3>画像生成で学ぶロジカルシンキング</h3><span class="go">ひらく →</span></div>
@@ -473,16 +481,19 @@
     </ul>
     <p class="sec-note" style="margin-top:10px;">英語ページはブラウザの翻訳機能や、AIに「このページを日本語で要約して」と頼むと読みやすくなります（要約は必ず元ページと見比べて）。</p>
   </div>
+  <p class="sec-note">次の一歩は「ハルシネーション対策」へ。“それっぽい嘘”を防ぐ・見抜く手順を身につけます。</p>
   <div class="backbar"><a class="backbtn" href="#home">← ホームにもどる</a></div>
 </section>
 
-<!-- ============================================================ ハルシネーション予防策 -->
+<!-- ============================================================ ハルシネーション対策 -->
 <section class="page" id="page-hallu">
   <div class="backbar"><a class="backbtn" href="#home">← ホームにもどる</a></div>
   <div class="coursehead">
-    <div class="head"><span class="lv app">応用</span><span class="lv plan">未実施</span><h2>ハルシネーション予防策</h2></div>
+    <div class="head"><span class="lv beg">初級</span><h2>ハルシネーション対策</h2></div>
   </div>
-  <p class="oneline">「AIの答えを<b>疑って、確かめて、直す</b>」ための具体的な予防のしかた。</p>
+  <p class="oneline">AIの“それっぽい嘘”を、<b>防ぐ・見抜く・線を引く</b>。入力で防ぐ→ツールで防ぐ→出力を検証→頼らない領域を決める、4つの方向。</p>
+
+  <div class="sec-eyebrow">まずはここから</div>
   <div class="card">
     <ul class="links">
       <li><span class="tag easy">やさしい</span><a class="link" href="https://japan-ai.co.jp/media/5186/" target="_blank" rel="noopener">ハルシネーションとは？発生の原因・種類・事例・対策を徹底解説</a><span class="src">JAPAN AI ラボ</span></li>
@@ -490,16 +501,77 @@
     </ul>
   </div>
 
-  <div class="sec-eyebrow">講座の柱の出典 ― 「防ぐ・見抜く」を深める</div>
+  <div class="sec-eyebrow">講座で出た2つの事故</div>
   <div class="card">
     <ul class="links">
+      <li><span class="tag en">英語</span><a class="link" href="https://www.reuters.com/legal/new-york-lawyers-sanctioned-using-fake-chatgpt-cases-legal-brief-2023-06-22/" target="_blank" rel="noopener">弁護士の“偽判例”で制裁金5,000ドル ― Mata v. Avianca（2023）</a><span class="src">Reuters ― 「専門家でも、確かめずに出すと事故になる」</span></li>
+      <li><span class="tag en">英語</span><a class="link" href="https://www.bbc.com/travel/article/20240222-air-canada-chatbot-misinformation-what-travellers-should-know" target="_blank" rel="noopener">エア・カナダ チャットボット誤案内 ― 旅行者が知っておくべきこと（2024）</a><span class="src">BBC Travel ― 「会社のボットの嘘は、会社の責任」</span></li>
+    </ul>
+    <p class="sec-note" style="margin-top:10px;">同じ2つの事件は「AI倫理入門」「生成AIのリスクと限界」のリンク集（CBC・Wikipedia）からも読めます。</p>
+  </div>
+
+  <div class="sec-eyebrow">原理 ― なぜ“それっぽい嘘”が残るのか</div>
+  <div class="card">
+    <ul class="links">
+      <li><span class="tag en">英語</span><a class="link" href="https://openai.com/index/why-language-models-hallucinate/" target="_blank" rel="noopener">Why language models hallucinate ― 正解率だけの採点が“当てずっぽう”を優遇する（2025）</a><span class="src">OpenAI ― 講座の「原理」と「消えていく対策／残る対策」の出典</span></li>
       <li><span class="tag en">英語</span><a class="link" href="https://techcrunch.com/2025/04/18/openais-new-reasoning-ai-models-hallucinate-more/" target="_blank" rel="noopener">新型の推論モデルは、むしろ幻覚が増えた（2025）</a><span class="src">TechCrunch ― 「賢いモデルなら大丈夫、とは限らない」のデータの出典</span></li>
+    </ul>
+  </div>
+
+  <div class="sec-eyebrow">ツールで防ぐ・出力を検証する</div>
+  <div class="card">
+    <ul class="links">
       <li><span class="tag en">英語</span><a class="link" href="https://www.k2view.com/blog/rag-hallucination/" target="_blank" rel="noopener">RAGでもハルシネーションは消えない</a><span class="src">K2view ― 「ツールは発生率を下げるだけ。最後は検証」の出典</span></li>
+      <li><span class="tag en">英語</span><a class="link" href="https://arxiv.org/abs/2405.20362" target="_blank" rel="noopener">法律AIツールの誤り17〜33% ― Hallucination-Free? Assessing the Reliability of Leading AI Legal Research Tools（2024）</a><span class="src">arXiv（Stanford RegLab）― 「RAG付きの専門ツールでもゼロにならない」の裏付け</span></li>
       <li><span class="tag en">英語</span><a class="link" href="https://arxiv.org/abs/2309.11495" target="_blank" rel="noopener">Chain-of-Verification（CoVe）― AI自身に検証させる型の原論文</a><span class="src">arXiv（Meta AI・2023）― 講座の「AI自身に検証させる」の元ネタ</span></li>
+    </ul>
+  </div>
+
+  <div class="sec-eyebrow">線を引く ― 頼らない領域を決める</div>
+  <div class="card">
+    <ul class="links">
       <li><span class="tag en">英語</span><a class="link" href="https://www.techtarget.com/searchitoperations/definition/What-is-automation-bias" target="_blank" rel="noopener">自動化バイアス（automation bias）とは</a><span class="src">TechTarget ― 「急いでいる時ほど鵜呑みにする」心理の用語解説</span></li>
     </ul>
     <p class="sec-note" style="margin-top:10px;">英語ページはブラウザの翻訳機能や、AIに「このページを日本語で要約して」と頼むと読みやすくなります（要約は必ず元ページと見比べて）。</p>
   </div>
+  <p class="sec-note">次の一歩は「AI時代のエンジニア像」または「組織の中のAI」へ。</p>
+  <div class="backbar"><a class="backbtn" href="#home">← ホームにもどる</a></div>
+</section>
+
+<!-- ============================================================ AI時代のエンジニア像 -->
+<section class="page" id="page-engineer">
+  <div class="backbar"><a class="backbtn" href="#home">← ホームにもどる</a></div>
+  <div class="coursehead">
+    <div class="head"><span class="lv beg">初級</span><h2>AI時代のエンジニア像</h2></div>
+  </div>
+  <p class="oneline">コードの書き方ではなく、<b>IT業界の“地図”</b>の話。受託型と自社開発型の分業、AIが変えている工程、3年後の予想図。</p>
+
+  <div class="sec-eyebrow">まずはここから ― 講座のふりかえり</div>
+  <div class="card">
+    <ul class="links">
+      <li><span class="tag easy">やさしい</span><a class="link" href="https://career.levtech.jp/guide/knowhow/article/755/" target="_blank" rel="noopener">自社開発とは？メリットやデメリット、受託開発との違いを解説</a><span class="src">レバテックキャリア ― PART1「受託型 vs 自社開発型」の復習に</span></li>
+      <li><span class="tag official">公式</span><a class="link" href="https://www.jftc.go.jp/houdou/pressrelease/2022/jun/220629_software.html" target="_blank" rel="noopener">ソフトウェア業の下請取引等に関する実態調査報告書（2022）</a><span class="src">公正取引委員会 ― PART1「多重下請け構造」の一次資料</span></li>
+      <li><span class="tag official">公式</span><a class="link" href="https://www.ipa.go.jp/jinzai/skill-standard/dss/index.html" target="_blank" rel="noopener">デジタルスキル標準（DSS）― 職種と必要スキルの一覧</a><span class="src">IPA 情報処理推進機構 ― PART1「職種の分業」・PART3「伸ばす力」</span></li>
+    </ul>
+  </div>
+
+  <div class="sec-eyebrow">データで見る現在地 ― PART2の裏付け</div>
+  <div class="card">
+    <ul class="links">
+      <li><span class="tag en">英語</span><a class="link" href="https://survey.stackoverflow.co/2025/ai" target="_blank" rel="noopener">2025 Stack Overflow Developer Survey ― AI</a><span class="src">Stack Overflow ― 開発者の84%がAIツールを使用／使用予定。PART2「AIが書き、人がレビューする」</span></li>
+      <li><span class="tag en">英語</span><a class="link" href="https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic" target="_blank" rel="noopener">How AI is transforming work at Anthropic</a><span class="src">Anthropic ― PART2〜3「フルスタック化」と、スキル低下・育成の懸念</span></li>
+      <li><span class="tag en">英語</span><a class="link" href="https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/" target="_blank" rel="noopener">METR調査 ― AI利用で熟練開発者はむしろ19%遅かった（2025）</a><span class="src">METR ― PART2「両方が同時に動いている」（速くなる面と、確認が増える面）</span></li>
+    </ul>
+    <p class="sec-note" style="margin-top:10px;">英語ページはブラウザの翻訳機能や、AIに「このページを日本語で要約して」と頼むと読みやすくなります（要約は必ず元ページと見比べて）。</p>
+  </div>
+
+  <div class="sec-eyebrow">もう一歩</div>
+  <div class="card">
+    <ul class="links">
+      <li><span class="tag en">英語</span><a class="link" href="https://www.anthropic.com/research/building-effective-agents" target="_blank" rel="noopener">Building Effective Agents</a><span class="src">Anthropic ― PART3「3〜5人＋AIエージェント」チーム像の前提知識</span></li>
+    </ul>
+  </div>
+  <p class="sec-note">次の一歩は「組織の中のAI」へ。個人で“使える”と組織で“成果が出る”は別もの、の回です。</p>
   <div class="backbar"><a class="backbtn" href="#home">← ホームにもどる</a></div>
 </section>
 
@@ -507,7 +579,7 @@
 <section class="page" id="page-soshiki">
   <div class="backbar"><a class="backbtn" href="#home">← ホームにもどる</a></div>
   <div class="coursehead">
-    <div class="head"><span class="lv beg">初級</span><span class="lv plan">未実施</span><h2>組織の中のAI</h2></div>
+    <div class="head"><span class="lv beg">初級</span><h2>組織の中のAI</h2></div>
   </div>
   <p class="oneline">会社・チームでAIを使うときの<b>ルールと運用</b>。個人利用との違いはどこか。</p>
 
@@ -516,6 +588,7 @@
     <ul class="links">
       <li><span class="tag easy">やさしい</span><a class="link" href="https://blog.kinto-technologies.com/posts/2025-12-21-breaking-through-ai-paradox/" target="_blank" rel="noopener">組織のAI活用が進まない理由とは？ ― AIパラドックスの壁を突破する</a><span class="src">KINTOテクノロジーズ ― 講座の「GenAIパラドックス」「つまずき4パターン」「With AI」に対応</span></li>
       <li><span class="tag en">英語</span><a class="link" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/seizing-the-agentic-ai-advantage" target="_blank" rel="noopener">Seizing the agentic AI advantage</a><span class="src">McKinsey ― 「約8割が導入、でもほぼ8割が“利益への影響なし”」の出典</span></li>
+      <li><span class="tag en">英語</span><a class="link" href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai-2025" target="_blank" rel="noopener">The state of AI in 2025 ― Agents, innovation, and transformation（2025年11月）</a><span class="src">McKinsey ― 講座冒頭の数字の出どころ（88%が利用、でも高業績はごく一部）</span></li>
     </ul>
   </div>
 
@@ -637,6 +710,21 @@
   <div class="backbar"><a class="backbtn" href="#home">← ホームにもどる</a></div>
 </section>
 
+<!-- ============================================================ GASを知りましょう（準備中） -->
+<section class="page" id="page-gas">
+  <div class="backbar"><a class="backbtn" href="#home">← ホームにもどる</a></div>
+  <div class="coursehead">
+    <div class="head"><span class="lv plan">準備中</span><span class="lv app">応用</span><h2>GASを知りましょう</h2></div>
+  </div>
+  <p class="oneline">応用トラックの入口。<b>“きっかけ・つなぐ・外に出る”の3部品</b>で、仕事が勝手に動く仕組みを見る回。</p>
+  <div class="planbox">
+    「毎朝9時に自動でメールが届く」「フォームに入力すると表が更新される」――そんな“勝手に動く仕事”は、
+    タイマー（きっかけ）・連携（つなぐ）・API（外に出る）の3つの部品でできています。
+    コードを書く前に、その部品の組み合わせを目で見て確かめる回を準備中です。公開までお楽しみに。
+  </div>
+  <div class="backbar"><a class="backbtn" href="#home">← ホームにもどる</a></div>
+</section>
+
 <!-- ============================================================ プロンプト壁打ち法 -->
 <section class="page" id="page-kabeuchi">
   <div class="backbar"><a class="backbtn" href="#home">← ホームにもどる</a></div>
@@ -707,7 +795,7 @@
 </section>
 
   <footer>
-    <p>このページは IT講座シリーズの復習・自己学習用リンク集です。外部サイトの内容・表記は各社に帰属します（リンク確認日：2026年7月28日）。リンクが開けない場合は、記事タイトルで検索してみてください。</p>
+    <p>このページは IT講座シリーズの復習・自己学習用リンク集です。外部サイトの内容・表記は各社に帰属します（リンク確認日：2026年9月14日）。リンクが開けない場合は、記事タイトルで検索してみてください。</p>
   </footer>
 
 </div>
